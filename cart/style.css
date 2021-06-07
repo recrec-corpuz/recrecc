@@ -1,0 +1,113 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #262626;
+	font-family: sans-serif;
+}
+body h2{
+	font-family: Raleway
+	font-size: 35px;
+	color: white;
+}	
+.container
+{
+    width: 1200px;
+    margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}	
+.container .box
+{
+	position: relative;
+	width: 220px;
+	height: 200px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}	
+.container .box .imgBox
+{
+	position: relative;
+    overflow: hidden;	
+}
+.container .box .imgBox img 
+{
+    max-width: 100%;
+	transition: transform 2s;
+}
+.container .box:hover .imgBox img
+{
+    transform: scale(1.2);
+}	
+.container .box .details
+{
+    position: absolute;
+    top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform 1s;
+}
+.container .box:hover .details
+{
+    transform: scaleY(1);
+}	
+.container .box .details .content
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+.container .box .details .content h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+.container .box .details .content p
+{
+	margin: 10px 0 0;
+	padding: 0;
+}	
+.navbar ul{
+    list-style: none;
+    background: #bd1e43;
+    text-align: center;
+    padding: 0;	
+	margin: 0;
+	
+	
+}	
+.navbar li{
+	display: inline-block;
+}	
+.navbar a{
+	text-decoration: none;
+	color:#fff;
+	width:100px;
+	display: block;
+	padding: 25px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: arial;
+	text-align: center;
+}	
+.navbar a:hover{
+	background: #353640
+}	
+.row{
+	display: flex;
+	height: 88%;
+}
+.col{
+    flex-basis: 50%;
+}
